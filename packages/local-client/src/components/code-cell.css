@@ -1,0 +1,32 @@
+.progress-wrapper{
+  height: 100%;
+  flex-grow: 1;
+  background-color: white;
+}
+
+.progress-cover {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  animation: fadIn 0.5s;
+}
+
+/* 
+  here we toggle the animation, we say on the initial part of animation keep 0, 
+  on half of the animation e.g 0.25sec
+  and on full cycle, 1
+ */
+@keyframes fadIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}

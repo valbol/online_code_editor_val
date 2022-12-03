@@ -1,0 +1,28 @@
+ .preview-wrapper {
+  position: relative;
+  height: 100%;
+  flex-grow: 1;  /* So it expend but not override other elements , 
+                    we will add 100% to the iframe and the effect will work */
+ 
+}
+
+.preview-wrapper iframe{
+  height: 100%;
+  width: 100%; /* here we add 100% */
+}
+.preview-err {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color:red
+}
+
+.react-draggable-transparent-selection .preview-wrapper:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+}
